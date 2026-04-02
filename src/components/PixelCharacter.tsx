@@ -8,9 +8,9 @@ const PIXEL_SIZE = 4;
 const PALETTE = {
   skin: '#FFD5C2',
   skinDark: '#F0B8A0',
-  hair: '#3D2215',
-  hairMid: '#5A3420',
-  hairLight: '#6B4530',
+  hair: '#6B2D8B',
+  hairMid: '#9B4DCA',
+  hairLight: '#E878A8',
   eyes: '#2A1A10',
   eyeWhite: '#FFFFFF',
   blush: '#FF9999',
