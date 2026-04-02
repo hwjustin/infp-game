@@ -53,9 +53,12 @@ export function EndScreen() {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.3, type: 'spring' }}
-        className="scale-[3] mb-8"
+        className="mb-4 flex-none"
+        style={{ width: 112, height: 160 }}
       >
-        <PixelCharacter emotion={heartPoints >= 75 ? 'blushing' : heartPoints >= 50 ? 'happy' : 'neutral'} />
+        <div className="origin-top-left scale-[2]">
+          <PixelCharacter emotion={heartPoints >= 75 ? 'blushing' : heartPoints >= 50 ? 'happy' : 'neutral'} />
+        </div>
       </motion.div>
 
       {/* Score */}
