@@ -49,9 +49,9 @@ export function SceneRenderer() {
       <PixelBackground type={scenario.background} />
 
       {/* Character area */}
-      <div className="relative flex-none h-[40%] flex items-center justify-center">
+      <div className="relative flex-1 flex items-center justify-center">
         <motion.div
-          className="scale-[3]"
+          className="scale-[4]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
@@ -60,28 +60,26 @@ export function SceneRenderer() {
         </motion.div>
       </div>
 
-      {/* Dialogue + choices area — scrollable */}
-      <div className="relative z-10 flex-1 flex flex-col min-h-0">
-        <div className="flex-1 overflow-y-auto pb-1">
-          <DialogueBox
-            key={`${phase}-${stepIndex}-${currentResponseText}`}
-            text={displayText}
-            speaker={displaySpeaker}
-            onClick={handleDialogueClick}
+      {/* Dialogue area */}
+      <div className="relative z-10 pb-2">
+        <DialogueBox
+          key={`${phase}-${stepIndex}-${currentResponseText}`}
+          text={displayText}
+          speaker={displaySpeaker}
+          onClick={handleDialogueClick}
+        />
+
+        {/* Choices */}
+        {phase === 'playing' && step.choices && (
+          <ChoicePanel
+            choices={step.choices}
+            onSelect={handleChoiceSelect}
+            visible={isTextComplete}
           />
+        )}
 
-          {/* Choices */}
-          {phase === 'playing' && step.choices && (
-            <ChoicePanel
-              choices={step.choices}
-              onSelect={handleChoiceSelect}
-              visible={isTextComplete}
-            />
-          )}
-        </div>
-
-        {/* Heart meter — always visible at bottom */}
-        <div className="flex-none bg-cream/90 py-1">
+        {/* Heart meter */}
+        <div className="mt-2">
           <HeartMeter />
         </div>
       </div>
