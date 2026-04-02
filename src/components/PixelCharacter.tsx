@@ -47,8 +47,8 @@ const baseSprite: PKey[][] = [
   ['_','hair','hair','skin','skin','mouth','mouth','mouth','mouth','skin','skin','hair','hair','_'],
   // Row 7: Chin
   ['_','hair','_','skin','skin','skin','skin','skin','skin','skin','skin','_','hair','_'],
-  // Row 8: Neck + hair flowing down + necklace
-  ['_','hair','_','_','skin','necklace','necklace','necklace','necklace','skin','_','_','hair','_'],
+  // Row 8: Neck + hair flowing down
+  ['_','hair','_','_','skin','skin','skin','skin','skin','skin','_','_','hair','_'],
   // Row 9: Shoulders + pink tee + hair
   ['_','hair','_','tee','tee','tee','tee','tee','tee','tee','tee','_','hair','_'],
   // Row 10: Pink tee body + hair sides
