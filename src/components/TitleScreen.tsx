@@ -76,7 +76,7 @@ export function TitleScreen() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.8 }}
         className="mb-6"
-        style={{ width: 96, height: 128 }}
+        style={{ width: 112, height: 160 }}
       >
         <div className="origin-top-left scale-[2]">
           <PixelCharacter emotion="shy" />
@@ -91,7 +91,7 @@ export function TitleScreen() {
         onClick={startGame}
         className="pixel-border-pink bg-cream px-8 py-4 text-[10px] text-pink cursor-pointer hover:bg-pink hover:text-cream transition-colors duration-300"
       >
-        ♥ Press Start ♥
+        Press Start
       </motion.button>
     </div>
   );
