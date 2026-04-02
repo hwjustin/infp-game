@@ -1,5 +1,15 @@
+import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import type { Choice } from '../types/game';
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 interface ChoicePanelProps {
   choices: Choice[];
@@ -8,11 +18,13 @@ interface ChoicePanelProps {
 }
 
 export function ChoicePanel({ choices, onSelect, visible }: ChoicePanelProps) {
+  const shuffled = useMemo(() => shuffle(choices), [choices]);
+
   if (!visible) return null;
 
   return (
     <div className="flex flex-col gap-2 px-4 mt-2">
-      {choices.map((choice, i) => (
+      {shuffled.map((choice, i) => (
         <motion.button
           key={choice.id}
           initial={{ opacity: 0, x: -20 }}
