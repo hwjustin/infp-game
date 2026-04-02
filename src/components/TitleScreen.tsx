@@ -56,30 +56,31 @@ export function TitleScreen() {
         ♥
       </motion.div>
 
-      {/* Character */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        className="mb-6"
-      >
-        <div className="scale-[3]">
-          <PixelCharacter emotion="shy" />
-        </div>
-      </motion.div>
-
       {/* Title */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.8 }}
-        className="text-center mb-8 mt-4"
+        transition={{ duration: 1, delay: 0.3 }}
+        className="text-center mb-6"
       >
         <h1 className="text-[16px] text-pink mb-3" style={{ animation: 'float 3s ease-in-out infinite' }}>
           Understanding
         </h1>
         <h2 className="text-[12px] text-brown">an INFP</h2>
         <p className="text-[7px] text-warm-gray mt-3">a tiny game about connection</p>
+      </motion.div>
+
+      {/* Character */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.8 }}
+        className="mb-6"
+        style={{ width: 96, height: 128 }}
+      >
+        <div className="origin-top-left scale-[2]">
+          <PixelCharacter emotion="shy" />
+        </div>
       </motion.div>
 
       {/* Start Button */}
