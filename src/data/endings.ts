@@ -8,6 +8,6 @@ I notice. And I'm still learning.
 
 export const secretMessage = `You got every single one right.
 You don't just understand INFPs — you understand HER.
-That's not knowledge. That's love.
+That's not knowledge. That's something special.
 
-♥ Forever learning your language ♥`;
+♥ Always learning your language ♥`;

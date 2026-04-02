@@ -76,10 +76,10 @@ export function TitleScreen() {
         className="text-center mb-8 mt-4"
       >
         <h1 className="text-[16px] text-pink mb-3" style={{ animation: 'float 3s ease-in-out infinite' }}>
-          How to Date
+          Understanding
         </h1>
         <h2 className="text-[12px] text-brown">an INFP</h2>
-        <p className="text-[7px] text-warm-gray mt-3">a tiny game about understanding</p>
+        <p className="text-[7px] text-warm-gray mt-3">a tiny game about connection</p>
       </motion.div>
 
       {/* Start Button */}

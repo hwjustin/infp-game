@@ -3,7 +3,7 @@ import type { Scenario } from '../types/game';
 export const scenarios: Scenario[] = [
   {
     id: 'first-date',
-    title: 'Chapter 1: The First Date',
+    title: 'Chapter 1: First Impressions',
     subtitle: 'She suggested a small bookstore cafe...',
     background: 'cafe',
     steps: [
@@ -321,7 +321,7 @@ export const scenarios: Scenario[] = [
   {
     id: 'movie-night',
     title: 'Chapter 4: Movie Night',
-    subtitle: 'The couch, some blankets, and her favorite film...',
+    subtitle: 'Some blankets, hot chocolate, and her favorite film...',
     background: 'movieTheater',
     steps: [
       {
@@ -608,8 +608,8 @@ export const scenarios: Scenario[] = [
   },
   {
     id: 'quiet-evening',
-    title: 'Chapter 7: A Quiet Evening Together',
-    subtitle: 'Just the two of you, under the stars...',
+    title: 'Chapter 7: A Quiet Evening',
+    subtitle: 'Under the stars, no words needed...',
     background: 'starryNight',
     steps: [
       {
@@ -635,7 +635,7 @@ export const scenarios: Scenario[] = [
             id: 'qe-2b',
             text: 'I love it too. Your silence says more than most people\'s words.',
             heartDelta: 15,
-            responseText: '"...that might be the most romantic thing anyone has ever said to me." Her voice is barely above a whisper.',
+            responseText: '"...that might be the most meaningful thing anyone has ever said to me." Her voice is barely above a whisper.',
             responseEmotion: 'blushing',
           },
           {
@@ -698,13 +698,13 @@ export const scenarios: Scenario[] = [
 export const endings = [
   {
     minScore: 90,
-    title: '✦ Soulmate Material ✦',
+    title: '✦ Kindred Spirit ✦',
     description: 'You truly understand her heart. Every quiet moment, every unspoken feeling — you saw it all. She\'s never felt this understood before. You didn\'t just learn her language, you became fluent in it.',
     color: '#E8788A',
   },
   {
     minScore: 75,
-    title: '♥ She\'s Falling For You ♥',
+    title: '♥ She Truly Trusts You ♥',
     description: 'You really get her. You might miss a beat here and there, but your heart is in the right place. She feels safe with you, and that\'s everything to an INFP.',
     color: '#C4A8D8',
   },
@@ -723,7 +723,7 @@ export const endings = [
   {
     minScore: 0,
     title: '× Read the Room ×',
-    description: 'Let\'s just say... you might want to try again. INFPs need someone who sees the universe in their silence. But hey, the fact that you\'re playing this means you care enough to learn!',
+    description: 'Let\'s just say... you might want to try again. INFPs need someone who sees the universe in their silence. But hey, the fact that you\'re here means you care enough to learn!',
     color: '#A89890',
   },
 ];

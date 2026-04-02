@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useGameStore } from '../store/gameStore';
 import { useTypewriter } from '../hooks/useTypewriter';
 
-const introText = "You're about to meet someone special... an INFP. She lives in a world of deep feelings, quiet poetry, and unspoken beauty. She won't always tell you what she needs — but she'll always hope you understand. Are you ready to learn her language?";
+const introText = "You're about to meet someone special... an INFP. She lives in a world of deep feelings, quiet poetry, and unspoken beauty. She won't always tell you what she needs — but she'll always hope you understand. Are you ready to learn how to truly connect with her?";
 
 export function IntroScreen() {
   const startPlaying = useGameStore(s => s.startPlaying);
