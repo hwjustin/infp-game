@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFF8F0;
+  --color-pink: #E8788A;
+  --color-pink-light: #F2A5B0;
+  --color-pink-dark: #C95A6A;
+  --color-teal: #7EC8C8;
+  --color-teal-dark: #5BA8A8;
+  --color-brown: #5C3A21;
+  --color-brown-light: #8B6B4A;
+  --color-heart-empty: #D4C4B0;
+  --color-lavender: #C4A8D8;
+  --color-warm-gray: #A89890;
+  --font-pixel: 'Press Start 2P', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-pixel);
+  background-color: var(--color-cream);
+  color: var(--color-brown);
+  overflow: hidden;
+  width: 100vw;
+  height: 100dvh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Pixel border utility */
+.pixel-border {
+  box-shadow:
+    -4px 0 0 0 var(--color-brown),
+     4px 0 0 0 var(--color-brown),
+     0 -4px 0 0 var(--color-brown),
+     0  4px 0 0 var(--color-brown),
+    -4px -4px 0 0 var(--color-brown),
+     4px -4px 0 0 var(--color-brown),
+    -4px  4px 0 0 var(--color-brown),
+     4px  4px 0 0 var(--color-brown);
+}
+
+.pixel-border-pink {
+  box-shadow:
+    -4px 0 0 0 var(--color-pink),
+     4px 0 0 0 var(--color-pink),
+     0 -4px 0 0 var(--color-pink),
+     0  4px 0 0 var(--color-pink),
+    -4px -4px 0 0 var(--color-pink),
+     4px -4px 0 0 var(--color-pink),
+    -4px  4px 0 0 var(--color-pink),
+     4px  4px 0 0 var(--color-pink);
+}
+
+/* Typewriter cursor blink */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Idle bounce for character */
+@keyframes idle-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* Heart pulse */
+@keyframes heart-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Star twinkle */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Float animation for title */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--color-pink);
+  color: var(--color-cream);
+}
